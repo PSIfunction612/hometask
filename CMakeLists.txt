@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(hometask VERSION 0.0.1$ENV{TRAVIS_BUILD_NUMBER})
+project(hometask VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
