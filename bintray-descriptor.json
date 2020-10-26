@@ -1,0 +1,27 @@
+{
+  "package" : {
+    "name" : "hometask",
+    "repo" : "wow-cpp",
+    "subject" : "burlunder",
+    "vcs_url" : "https://github.com/PSIfunction612/hometask"
+  },
+  "version" : {
+    "name" : "__VERSION__",
+    "desc" : "hometask __VERSION__",
+  },
+  "licenses" : ["BSD"],
+  "desc" : "Debian package built and deployed completely auto",
+  "files": [
+    {
+      "includePattern": "./(.[^/]*(\\.deb)$)",
+      "uploadPattern": "$1",
+      "matrixParams": {
+        "deb_distribution": "focal",
+        "deb_component": "main",
+        "deb_architecture": "amd64"
+      }
+    }
+  ],
+  "publish": true,
+  "override": false
+}
