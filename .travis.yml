@@ -12,7 +12,7 @@ script:
   - cmake --build . --target package
 
 before_deploy:
-  -sed -i "s/__VERSION__/$TRAVIS_BUILD_NUMBER/g" bintray-descriptor.json
+  - sed -i "s/__VERSION__/$TRAVIS_BUILD_NUMBER/g" bintray-descriptor.json
   - cat bintray-descriptor.json
 
 deploy:
